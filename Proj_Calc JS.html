@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Calculator</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="calc(ver2).css">
+    <!--jQuery database-->
+    <script type="text/javascript" src="assests/js/lib/jquery-3.4.1.min.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="container">
+       <div class="header">
+        <h3><i class="fas fa-bars mt-1"></i> I'm Calculator </h3>
+        <ul class="calc-type">
+          <li id="std">Standard</li>
+          <li id="sci">Scientific</li>
+        </ul>
+       </div>
+        <div class="input-area">
+        <input id="LV" type="text" placeholder="Last Output">
+        <input id="CV" type="text" placeholder="Current Input">
+        </div>
+        <div class="container fluid">
+            <div class="row input">
+              <div class="col-3 mt-3"></div>
+              <div class="col-3 mt-3"></div>
+              <div class="col-3 mt-3"></div>
+              <div class="col-3 mt-3"><input class="value" id="Clear-All" data-role="operator" type="button" value="CE";></div>
+            </div>
+         <section class="scientific">
+          <div class="row input">
+            <div class="col-3 "><input class="value sci" id="pi" data-role="pi" type="button" value=&#960;></div>
+            <div class="col-3 "><input class="value sci" id="square" type="button" value="x&#178"></div>
+            <div class="col-3 "><input class="value sci" id="mod" type="button" value="mod"></div>
+            <div class="col-3 "><input class="value sci" id="exp" role="operator" type="button" value="exp"></div>
+          </div>
+
+        <div class="row input">
+          <div class="col-3 "><input class="value sci" id="fact" type="button" value="n!"></div>
+          <div class="col-3 "><input class="value sci" id="log"  type="button" value="log"></div>
+          <div class="col-3 "><input class="value sci" id="sin"  type="button" value="sin"></div>
+          <div class="col-3 "><input class="value sci" id="cos"  type="button" value="cos"></div>
+        </div>
+
+        <div class="row input">
+          <div class="col-3"><input class="value sci" id="tan" type="button" value="tan"></div>
+          <div class="col-3"><input class="value sci" id="cot" type="button" value="cot"></div>
+          <div class="col-3"><input class="value sci" id="sec" type="button" value="sec"></div>
+          <div class="col-3"><input class="value sci" id="hyp" data-role="operator" type="button" value="hyp"></div>
+        </div>
+
+        <div class="row input hyp">
+          <div class="col-3"><input class="value sci" id="tanh" type="button" value="tanh"></div>
+          <div class="col-3"><input class="value sci" id="coth" type="button" value="coth"></div>
+          <div class="col-3 "><input class="value sci" id="sinh" type="button" value="sinh"></div>
+          <div class="col-3"><input class="value sci" id="cosh" type="button" value="cosh"></div>
+        </div>
+
+       </section>
+
+           <div class="row input oprt">
+               <div class="col-3 mt-2"><input class="value" id="sqroot" data-role="sqroot" type="button" value=&radic;></div>
+               <div class="col-3 mt-2"><input class="value" type="button" value="("></div>
+               <div class="col-3 mt-2"><input class="value" type="button"value=")"></div>
+               <div class="col-3 mt-2"><input class="value" data-role="operator" type="button" value="%"></div>
+           </div>
+
+           <div class="row input">
+            <div class="col-3  mt-2"><input class="value" data-role="number" type="button" value="7"></div>
+            <div class="col-3  mt-2"><input class="value" data-role="number" type="button" value="8"></div>
+            <div class="col-3  mt-2"><input class="value" data-role="number" type="button" value="9"></div>
+            <div class="col-3  mt-2"><input class="value" data-role="operator" type="button"value="/"></div>
+           </div>
+
+          <div class="row input">
+            <div class="col-3 "><input class="value" data-role="number" type="button" value="4"></div>
+            <div class="col-3 "><input class="value" data-role="number" type="button" value="5"></div>
+            <div class="col-3 "><input class="value" data-role="number" type="button" value="6"></div>
+            <div class="col-3 "><input class="value" data-role="operator" type="button"value="*"></div>
+          </div>
+
+          <div class="row input">
+            <div class="col-3 "><input class="value" data-role="number" type="button" value="1"></div>
+            <div class="col-3 "><input class="value" data-role="number" type="button" value="2"></div>
+            <div class="col-3 "><input class="value" data-role="number" type="button" value="3"></div>
+            <div class="col-3 "><input class="value" data-role="operator" type="button"value="-"></div>
+          </div>
+
+          <div class="row split">
+              <div class="col-6">
+                  <div class="row">
+                    <div class="col-6 "><input class="value" data-role="number" type="button" value="0"></div>
+                    <div class="col-6 "><input class="value" data-role="number" type="button" value="."></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><input id="delete-btn" data-role="operator" type="button"value="DEL"></div>
+                    <div class="col-6 "><input id="clear-btn" data-role="operator" type="button"value="CLEAR"></div> 
+                  </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-6 ">
+                    <h2><input class="calculate-btn" id="calc-btn" data-role="operator" type="button"value="="></h2>
+                  </div>
+                  <div class="col-6 ">
+                    <h2><input class="value" id="add-op" data-role="operator" type="button"value="+"></h2>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+   </div>
+    
+    <script type="text/javascript" src="calc(ver2).js"></script>
+</body>
+</html>

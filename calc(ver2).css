@@ -1,0 +1,149 @@
+ul {
+    width: 25%;
+    display: block;
+    list-style: none;
+    margin: 0 16px;
+    padding-left: 0%;
+    display: none;
+}
+li{
+    color: white;
+    padding-left: 5px;
+    background-color: rebeccapurple;
+    font-weight: bolder;
+    font-size: 20px;
+}
+li:hover{
+    border: 2px solid rebeccapurple;
+    color: purple;
+    background-color: white;
+}
+body {
+    font-family: Roboto, sans-serif; 
+    background: #C04848;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+#container{
+    width: 450px;
+    height: 100%;
+    margin: 10px auto;
+    background-color: teal;
+    box-shadow: 0 0 3px rgba(245, 245, 245, 0.600);
+    position: relative;
+}
+
+h3{
+    background-color: teal;
+    color: #fff;
+    padding: 5px 20px;
+    margin: 0%;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.scientific{
+    display: none;
+}
+
+.fa-bars{
+    float: left;
+}
+.fa-cog{
+    float: right;
+}
+.col-3{
+    padding: 0%;
+}
+
+.value,.calculate-btn{
+    width: 75%;
+    height: 100%;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: honeydew;
+}
+#clear-btn, #delete-btn{
+    background-color: indianred;
+    width: 75%;
+    height: 110%;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+button{
+    margin: 5px 0;
+    padding: 15px 0;
+    width: 70%;
+    height: 15px;
+}
+
+.input-area{
+    border: 3px solid burlywood;
+}
+
+#CV,#LV{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bolder;
+    color: green;
+    padding: 10px 10px;
+    background-color: #f7f7f7;
+    border: 3px solid rgba(0, 0, 0, 0);
+    text-align: right;
+    background-color: ivory;
+}
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input .col-3{
+    width: 75%;
+}
+
+.oprt .value{
+    background-color: gray;
+}
+
+.sci{
+    background-color: gray;
+}
+
+[data-role="operator"]{
+    background-color: gray;
+}
+
+#Clear-All{
+    background-color: indianred;
+}
+
+input:focus{
+    background-color: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#add-op,#calc-btn{
+    width: 75%;
+    height: 100%;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+h2{
+    height: 78px;
+}
